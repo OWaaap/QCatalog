@@ -1,0 +1,148 @@
+.wrapper {
+  border-top: 2px solid #0072ce;
+  padding: 0 40px;
+}
+.container {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.breadcrumbs {
+  margin: 20px 0;
+  font-size: 18px;
+  a {
+    color: #0072ce;
+  }
+}
+
+.product-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  img {
+    max-width: 584px;
+    cursor: pointer;
+    height: auto;
+  }
+}
+
+.product-img-list {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.product-description {
+  width: 35%;
+}
+
+.text {
+  margin-top: 20px;
+  border-top: 1px solid rgb(223, 223, 223);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+
+  button {
+    margin-left: 10px;
+    border: 1px solid #0072ce;
+    color: #0072ce;
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 3px 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+
+.product-price {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.product-name {
+  font-size: 25px;
+  line-height: 24px;
+}
+
+.product-size {
+  margin-top: 15px;
+  p {
+    font-size: 22px;
+  }
+}
+
+.product-size__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  span {
+    min-width: 64px;
+    height: 32px;
+    border-radius: 20px;
+    border: 2px solid #000;
+    padding: 4px;
+    cursor: pointer;
+    margin: 4px 5px 4px 3px;
+    text-align: center;
+
+    &:hover {
+      border: 2px solid #0072ce;
+      color: #0072ce;
+    }
+  }
+  .product-size_active {
+    border: 2px solid #0072ce;
+    color: #0072ce;
+  }
+}
+
+.product-color__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  span {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 10px;
+    &:first-child {
+      background-color: black;
+    }
+
+    &:nth-child(2) {
+      background-color: red;
+    }
+
+    &:nth-child(3) {
+      background-color: green;
+    }
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &:hover {
+      border: 2px solid #0072ce;
+    }
+  }
+
+  .product-color_active {
+    border: 2px solid #0072ce;
+  }
+}

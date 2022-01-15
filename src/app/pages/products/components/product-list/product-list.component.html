@@ -1,0 +1,91 @@
+<div class="test">
+  <app-header></app-header>
+  <div class="wrapper">
+    <div class="container">
+      <div class="nav-block">
+        <div class="column">
+          <div class="breadcrumbs">
+            <a>QCatalog</a> => Clothing Shoes & Accessories
+          </div>
+          <h2 class="title">Clothing, Shoes & Accessories</h2>
+        </div>
+        <div class="column">
+          <div class="filters">
+            <div class="filters-item">
+              <mat-slide-toggle>
+                <span></span> Available in stores</mat-slide-toggle
+              >
+            </div>
+            <div class="filters-item">
+              <button>
+                Online Savings
+                <svg
+                  width="24px"
+                  height="24px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                >
+                  <path
+                    d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="filters-item">
+              <span>Sort By:</span>
+              <button>
+                Best Match
+                <svg
+                  width="24px"
+                  height="24px"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                >
+                  <path
+                    d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <aside class="sidebar">
+          <app-sidebar></app-sidebar>
+        </aside>
+        <div class="product-list">
+          <mat-card
+            *ngFor="let product of productList"
+            class="product"
+            routerLink="/view/{{ product.id }}"
+          >
+            <div class="product-img">
+              <img
+                src="https://i5.walmartimages.ca/images/Thumbnails/080/379/6000199080379.jpg"
+                alt="product-img"
+              />
+            </div>
+            <div class="product-info">
+              <p class="product-name">
+                {{ product.productName }}
+              </p>
+              <p class="product-size">{{ product.productSize }}</p>
+              <div class="product-rating">
+                <bar-rating
+                  [rate]="product.productRating"
+                  [max]="5"
+                ></bar-rating>
+              </div>
+              <p class="product-price">${{ product.productPrice }}</p>
+              <button class="product-button">Choose option</button>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

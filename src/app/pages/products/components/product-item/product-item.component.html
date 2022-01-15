@@ -1,0 +1,70 @@
+<app-header></app-header>
+<div class="wrapper">
+  <div class="breadcrumbs">
+    <a> Walmart.ca </a>=><a>Clothing, Shoes & Accessories</a>=><a>Men</a> =>
+    <a>Joggers & Sweatpants</a>
+    => Athletic Works Men's Open Bottom Fleece Pants
+  </div>
+  <div class="container">
+    <div class="product-img-container">
+      <div class="product-img-list">
+        <img
+          src="https://i5.walmartimages.ca/images/Enlarge/803/355/6000198803355.jpg"
+          alt="#"
+        />
+        <img
+          src="https://i5.walmartimages.ca/images/Enlarge/803/474/6000198803474.jpg"
+          alt="#"
+        />
+        <img
+          src="https://i5.walmartimages.ca/images/Enlarge/803/408/6000198803408.jpg"
+          alt="#"
+        />
+      </div>
+      <div class="main-product-img">
+        <img
+          src="https://i5.walmartimages.ca/images/Enlarge/803/355/6000198803355.jpg"
+          alt="#"
+        />
+      </div>
+    </div>
+    <div class="product-description">
+      <mat-card>
+        <h2 class="product-name">
+          {{ product.productName }}
+        </h2>
+        <div class="product-rating">
+          <bar-rating [rate]="product.productRating" [max]="5"></bar-rating>
+          <span>(122)</span>
+          <button>Exclusive</button>
+        </div>
+        <p class="product-price">${{ product.productPrice }}</p>
+        <div class="text">
+          Available at nearby stores <br />
+          Free curbside pickup*<br />
+          free standard shipping over $35<br />
+          Arrives by Tue Jan 18<br />
+        </div>
+        <div class="product-color">
+          <p>Colour:</p>
+
+          <div class="product-color__list">
+            <span class="product-color product-color_active"></span>
+            <span class="product-color"></span>
+            <span class="product-color"></span>
+          </div>
+        </div>
+        <div class="product-size">
+          <p>Size: L</p>
+          <div class="product-size__list">
+            <span class="product-size">S</span>
+            <span class="product-size">M</span>
+            <span class="product-size product-size_active">L</span>
+            <span class="product-size">XL</span>
+            <span class="product-size">2XL/3XL</span>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

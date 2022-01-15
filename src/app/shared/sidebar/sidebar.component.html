@@ -1,0 +1,17 @@
+<div class="container">
+  <mat-accordion>
+    <mat-expansion-panel *ngFor="let item of list">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ item }}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul>
+        <li>Boys</li>
+        <li>Girls</li>
+        <li>Men</li>
+        <li>Women</li>
+      </ul>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
