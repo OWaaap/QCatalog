@@ -1,5 +1,7 @@
+$mainColor: rgb(172, 45, 13);
+
 .wrapper {
-  border-top: 2px solid #0072ce;
+  border-top: 2px solid $mainColor;
 }
 
 .container {
@@ -21,7 +23,7 @@
 .breadcrumbs {
   font-size: 18px;
   a {
-    color: #0072ce;
+    color: $mainColor;
   }
 }
 
@@ -39,7 +41,7 @@
   justify-content: space-between;
   font-size: 18px;
   font-weight: 500;
-  color: #0072ce;
+  color: $mainColor;
 
   button {
     font-size: inherit;
@@ -51,7 +53,7 @@
 
     svg {
       margin-left: 10px;
-      fill: #0072ce;
+      fill: $mainColor;
     }
   }
 }

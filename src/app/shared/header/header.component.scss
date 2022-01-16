@@ -1,3 +1,5 @@
+$mainColor: rgb(172, 45, 13);
+
 header {
   padding: 40px 50px 0 50px;
 }
@@ -19,7 +21,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #0072ce;
+  border: 1px solid $mainColor;
   ::placeholder {
     font-size: 18px;
     color: #333;
@@ -34,8 +36,8 @@ header {
 .search-container__search-btn {
   width: 50px;
   height: 100%;
-  border-color: #0072ce;
-  background-color: #0072ce;
+  border-color: $mainColor;
+  background-color: $mainColor;
 
   svg {
     fill: #fff;
@@ -67,13 +69,13 @@ header {
       padding: 25px 5px;
       font-size: 16px;
       font-weight: 500;
-      color: #0072ce;
+      color: $mainColor;
     }
   }
 }
 
 .drop-down-menu {
-  background-color: #0072ce;
+  background-color: $mainColor;
   display: flex;
   align-items: center;
   padding: 15px 10px;

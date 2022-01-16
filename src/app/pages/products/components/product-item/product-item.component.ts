@@ -15,22 +15,4 @@ export class ProductItemComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  showGallery(index: number) {
-    let prop = {
-      images: [
-        {
-          path: 'https://i5.walmartimages.ca/images/Enlarge/803/355/6000198803355.jpg',
-        },
-        {
-          path: 'https://i5.walmartimages.ca/images/Enlarge/803/474/6000198803474.jpg',
-        },
-        {
-          path: 'https://i5.walmartimages.ca/images/Enlarge/803/408/6000198803408.jpge',
-        },
-        { path: 'path_to_image_full_image' },
-      ],
-      index,
-    };
-  }
 }
