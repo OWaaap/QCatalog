@@ -19,7 +19,7 @@
     </div>
   </div>
   <div class="bottom-header-block">
-    <div class="drop-down-menu">
+    <div class="drop-down-menu" (click)="isShowMenu = !isShowMenu">
       <span>Departments</span>
       <svg
         width="24"
@@ -32,6 +32,79 @@
           d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"
         />
       </svg>
+    </div>
+    <div class="drop-down-menu__hide-content" *ngIf="isShowMenu">
+      <ul class="drop-down-menu__list">
+        <li class="drop-down-menu__list-item">
+          <a>Appliances</a>
+        </li>
+        <li class="drop-down-menu__list-item"><a>Baby</a></li>
+        <li class="drop-down-menu__list-item">
+          <a>Clothing, shoes & accessories</a>
+        </li>
+        <li class="drop-down-menu__list-item"><a>Electronics</a></li>
+        <li class="drop-down-menu__list-item"><a>Furniture</a></li>
+        <li class="drop-down-menu__list-item"><a>Gifts & Holidays</a></li>
+        <li class="drop-down-menu__list-item">
+          <a>Health, Beauty & Pharmacy</a>
+        </li>
+        <li class="drop-down-menu__list-item"><a>Home</a></li>
+      </ul>
+      <div class="drop-down-menu__sub-list">
+        <p class="drop-down-menu__sub-list-title">
+          <a class="link">All Appliances</a>
+        </p>
+        <p class="drop-down-menu__sub-list-sub-title">
+          <a class="link">Appliances on Rollback</a>
+        </p>
+        <div class="drop-down-menu__sub-list-container">
+          <div class="drop-down-menu__sub-list-item">
+            <p><a class="link">Small Appliances</a></p>
+            <ul>
+              <li><a>Lorem.</a></li>
+              <li><a>Odit.</a></li>
+              <li><a>Repudiandae.</a></li>
+              <li><a>Obcaecati!</a></li>
+              <li><a>Quibusdam.</a></li>
+              <li><a>Lorem.</a></li>
+              <li><a>Odit.</a></li>
+              <li><a>Repudiandae.</a></li>
+              <li><a>Obcaecati!</a></li>
+              <li><a>Quibusdam.</a></li>
+            </ul>
+          </div>
+          <div class="drop-down-menu__sub-list-item">
+            <p><a class="link">Small Appliances</a></p>
+            <ul>
+              <li><a>Lorem.</a></li>
+              <li><a>Odit.</a></li>
+              <li><a>Repudiandae.</a></li>
+              <li><a>Obcaecati!</a></li>
+              <li><a>Quibusdam.</a></li>
+              <li><a>Lorem.</a></li>
+              <li><a>Odit.</a></li>
+              <li><a>Repudiandae.</a></li>
+              <li><a>Obcaecati!</a></li>
+              <li><a>Quibusdam.</a></li>
+            </ul>
+          </div>
+          <div class="drop-down-menu__sub-list-item">
+            <p><a class="link">Small Appliances</a></p>
+            <ul>
+              <li><a>Lorem.</a></li>
+              <li><a>Odit.</a></li>
+              <li><a>Repudiandae.</a></li>
+              <li><a>Obcaecati!</a></li>
+              <li><a>Quibusdam.</a></li>
+              <li><a>Lorem.</a></li>
+              <li><a>Odit.</a></li>
+              <li><a>Repudiandae.</a></li>
+              <li><a>Obcaecati!</a></li>
+              <li><a>Quibusdam.</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <nav class="nav-block">
       <ul class="nav-list">
